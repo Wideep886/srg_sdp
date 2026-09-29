@@ -1,0 +1,26 @@
+{
+  "status": "PASS",
+  "scope": "Fresh general-input six-point degree-five builder reproduces the exact original coefficients, compressed coefficients, physical shifts and actual SDPA input for (550,162,75,36). No solver run.",
+  "checks": [
+    {
+      "file": "original_exact_coefficients.tsv",
+      "byte_identical": true,
+      "sha256": "80205286b3062233992caef54c0b96da532fa73a5479f6745c42815c51ba66c8"
+    },
+    {
+      "file": "exact_coefficients.tsv",
+      "byte_identical": true,
+      "sha256": "fa47fecbf0fdfbfbf27a6493d4f62325231a10e8f6efb57b470a1eff65976d80"
+    },
+    {
+      "file": "physical_shifts.json",
+      "byte_identical": true,
+      "sha256": "62483fd0f9885070378d8a1d01e5c49978242495aa5433eee7de0ecdfe694aa2"
+    },
+    {
+      "file": "problem.dat-s",
+      "byte_identical": true,
+      "sha256": "01233d663c99fe23588135baa7625f96b6a2c78f9a431b6aa067c0553a288211"
+    }
+  ]
+}

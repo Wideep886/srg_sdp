@@ -1,0 +1,36 @@
+{
+  "status": "CERTIFIED",
+  "verified": true,
+  "parameters": [
+    8,
+    6,
+    4,
+    6
+  ],
+  "points": 4,
+  "degree": 2,
+  "sphere_dimension": 4,
+  "inner_products": [
+    "-1",
+    "0"
+  ],
+  "certified_integer_bound": 8,
+  "independent_check_requested": true,
+  "independent_check_passed": true,
+  "nonexistence_proved": false,
+  "verification_summary": "/Users/wideep886/Documents/LEO2/research/clean_release_v11/final_independent_pipeline/verification/verification_summary.json",
+  "input_sha256": "cbf84256479d7d30067d5ccd986ac9712df205a18df567b0f9bb236c693630d0",
+  "graph_embedding_inputs_unchanged": true,
+  "graph_embedding_input_sha256": {
+    "/Users/wideep886/Documents/LEO2/research/clean_release_v11/final_independent_pipeline/input.json": "cbf84256479d7d30067d5ccd986ac9712df205a18df567b0f9bb236c693630d0",
+    "/Users/wideep886/Documents/LEO2/research/clean_release_v11/final_independent_pipeline/model/metadata.json": "fdd57606e575ac2bd6b8b33e09291de049a20f56db8f3930410abc6da6bf8c0e",
+    "/Users/wideep886/Documents/LEO2/research/clean_release_v11/final_independent_pipeline/model/original_metadata.json": "8264ad5db875bea6803fc75d83b8ed8a174d9f46ee8970d1b5261a68a3a088fa",
+    "/Users/wideep886/Documents/LEO2/output/srg_sdp_v11/code/parameters.py": "54a12e308593f395c083fea59bd5296b6c4f2ff0eccdaf05e824a364285cd370",
+    "/Users/wideep886/Documents/LEO2/output/srg_sdp_v11/code/workflow.py": "93819364bc94f11903008521dbb1027579f7c2d3dc665953cbe26e19572a5651",
+    "/Users/wideep886/Documents/LEO2/output/srg_sdp_v11/code/independent_check.py": "e0d43eeab43d866c05bb0a079bc6e2c5c53ad009049fa9530af7dcc7842141b2",
+    "/Users/wideep886/Documents/LEO2/research/clean_release_v11/final_independent_pipeline/solution/candidate.json": "4c3e361e7c9b8790efadb65e06cbde9c2259fa451edefbd77a80cacfccbd73be",
+    "/Users/wideep886/Documents/LEO2/research/clean_release_v11/final_independent_pipeline/model/original_exact_coefficients.tsv": "f9fc7cad59585735f21a9fc3539b12af7044374b39df381bd4c41c5e08545268"
+  },
+  "original_model_sha256": "8264ad5db875bea6803fc75d83b8ed8a174d9f46ee8970d1b5261a68a3a088fa",
+  "parameter_checker_sha256": "54a12e308593f395c083fea59bd5296b6c4f2ff0eccdaf05e824a364285cd370"
+}

@@ -1,0 +1,218 @@
+{
+  "schema": "srg-sdp-release-validation-v1",
+  "date": "2026-09-29",
+  "status": "PASS",
+  "environment": {
+    "python": "3.9.6",
+    "os": "Darwin",
+    "architecture": "arm64"
+  },
+  "unit_tests": {
+    "passed": 56,
+    "solver_runs": 0
+  },
+  "small_pipeline_checks": [
+    {
+      "parameters": [
+        16,
+        6,
+        2,
+        2
+      ],
+      "points": 3,
+      "degree": 5,
+      "bound": 16,
+      "verified": true,
+      "independent_check_passed": true
+    },
+    {
+      "parameters": [
+        8,
+        6,
+        4,
+        6
+      ],
+      "points": 4,
+      "degree": 2,
+      "bound": 8,
+      "verified": true,
+      "independent_check_passed": true
+    }
+  ],
+  "shell_path_check": "Printed commands ran in zsh with spaces and apostrophes in project and output paths, from outside the project.",
+  "six_point_recheck": {
+    "certificate": "550_162_75_36",
+    "points": 6,
+    "degree": 5,
+    "verified": true,
+    "integer_bound": 506,
+    "nonexistence_proved": true,
+    "solver_runs": 0,
+    "stages": {
+      "exact": "PASS",
+      "direct-zero": "PASS",
+      "export-audit": "PASS"
+    },
+    "inputs_unchanged": true,
+    "independent_check_requested": false
+  },
+  "retained_certificate_input_checks": {
+    "status": "PASS",
+    "scope": "Parameter-to-model linkage and strict coefficient parsing only; not a full feasibility recheck.",
+    "certificates": [
+      {
+        "certificate": "1344_221_88_26",
+        "parameters": [
+          1344,
+          221,
+          88,
+          26
+        ],
+        "sphere_dimension": 56,
+        "points": 6,
+        "degree": 5,
+        "coefficient_counts": {
+          "original_exact_coefficients.tsv": 22131,
+          "exact_coefficients.tsv": 21408
+        }
+      },
+      {
+        "certificate": "351_140_73_44",
+        "parameters": [
+          351,
+          140,
+          73,
+          44
+        ],
+        "sphere_dimension": 26,
+        "points": 6,
+        "degree": 5,
+        "coefficient_counts": {
+          "original_exact_coefficients.tsv": 22143,
+          "exact_coefficients.tsv": 21420
+        }
+      },
+      {
+        "certificate": "550_162_75_36",
+        "parameters": [
+          550,
+          162,
+          75,
+          36
+        ],
+        "sphere_dimension": 33,
+        "points": 6,
+        "degree": 5,
+        "coefficient_counts": {
+          "original_exact_coefficients.tsv": 22106,
+          "exact_coefficients.tsv": 21383
+        }
+      },
+      {
+        "certificate": "703_182_81_35",
+        "parameters": [
+          703,
+          182,
+          81,
+          35
+        ],
+        "sphere_dimension": 37,
+        "points": 6,
+        "degree": 5,
+        "coefficient_counts": {
+          "original_exact_coefficients.tsv": 22149,
+          "exact_coefficients.tsv": 21426
+        }
+      }
+    ]
+  },
+  "integrity": {
+    "unchanged_certificate_files": 48,
+    "unchanged_third_party_files": 13,
+    "bundled_source_archive_checks": "PASS"
+  },
+  "documentation": {
+    "status": "PASS",
+    "bilingual_command_blocks": 6,
+    "local_document_links": 16,
+    "readme_lines": {
+      "English": 137,
+      "Traditional Chinese": 137
+    }
+  },
+  "limits": [
+    "The other three six-point certificates were not reverified for feasibility in this revision.",
+    "The optional independent checker was run on the two small examples, not a six-point certificate.",
+    "No full experimental table was searched again, and the solver was not rebuilt.",
+    "Exact arithmetic and independent checks are not proof-assistant formal verification."
+  ],
+  "tested_files_sha256": {
+    "code/build_solver.py": "a0af1a02c2c294a5b917108d9d3e525cc31906c497c2442713ba71bed0627e50",
+    "code/check_compression.py": "5ab623cbe5854c127e75098d2fb5dd272ecdcb20e079848aca2ad2e3ef29e829",
+    "code/check_matrices.py": "1f1e8a009ba96814a991d61a63fb8f59c3f01d19bb9ff84e9b038cf3f779da7f",
+    "code/check_solver_io.py": "fa77dffb186a38cb3c93ff7ac7a6c935c139668c88a21c35d1f1412085927dd8",
+    "code/exact_arithmetic.py": "eafb273858a3d7741e7df814d99416aab69a2639d9363821b1ae79ddc56d7005",
+    "code/exact_model.py": "ac525bfce46775e8fa3e47110ac68df5d675ea311a79d2b6ec1282b15bc971f2",
+    "code/independent_check.py": "a13e09916067cf70248c62931c6dc4e513db7ef57357046430b9b6cf8834aae2",
+    "code/model.py": "4df3553744bacc4f9fd74ad6727dc9b6aaf8533229c6cd63ae58a33ca6af3fa9",
+    "code/parameters.py": "54a12e308593f395c083fea59bd5296b6c4f2ff0eccdaf05e824a364285cd370",
+    "code/srg.py": "d3a1450dd68827f1e0baae1b1e7f501f8b3ae615e3eb13cbdc8eafc79d0671cf",
+    "code/verify.py": "760fce24bcf96a164fa545134ef02829e65735da35397e5ea8d04ad9b7ebfe46",
+    "code/workflow.py": "2f9368d2eea1e8d003eec89d73d2f220261cb32fcec86d9324286f6ad7d538aa",
+    "extras/tests/test_independent.py": "310632a5c5a6a3a81746a8819a3b8975a2b55e0b4264b9172a0ff5ab6f8802dd",
+    "extras/tests/test_model.py": "7c89f7e9a5e6cffda2d5a61d58f7390b4fcdbbcf04e7f65ae0d13c9d378941c4",
+    "extras/tests/test_parameters.py": "aab2595b3eaa3310657f30c6ea09934153945f763acfeb5ecf38aa3206273ccb",
+    "extras/tests/test_workflow.py": "c21378915e7a2aa4b8830722e421f229de0aec2bf3b5ddd1213dbb452476fd0c",
+    "extras/tests/test_zero_block_transport.py": "9d70576748736786ff5906030ff87806a549a7caa0e9f4c248f77bcb7ae8afc2"
+  },
+  "retained_certificate_files_sha256": {
+    "results/certificates/1344_221_88_26/historical_verification.json": "f4f87252479e28a468696110b57568c25af08c23c8bf47378c6c43f1d8798eb9",
+    "results/certificates/1344_221_88_26/input.json": "4619cb8b1db9659e85cc1193eb932c624540b3a800df75a7797c3057061366c9",
+    "results/certificates/1344_221_88_26/model/build.json": "494cf79025b3a3557ec0b1d9c5f4830b58857a6ace2bc14f4c69ba4b106f6ff9",
+    "results/certificates/1344_221_88_26/model/exact_coefficients.tsv": "2975c68ba6c2e1318d3e40d5f3e09ab3d3da87edc810762ffaf1b3cb650a900c",
+    "results/certificates/1344_221_88_26/model/metadata.json": "5d691a16cee8ac631d11e3483bf4386e0775eaab27dffdde896c6351c562584a",
+    "results/certificates/1344_221_88_26/model/original_exact_coefficients.tsv": "f507a95019d6f61fb3618abd8772ed0f5b94338097986653c708f7df994a0491",
+    "results/certificates/1344_221_88_26/model/original_metadata.json": "6db91914703c7ed3ce2c96c943f732d5928c66e8c5acda167cc11e83d60e98ca",
+    "results/certificates/1344_221_88_26/model/physical_shifts.json": "62483fd0f9885070378d8a1d01e5c49978242495aa5433eee7de0ecdfe694aa2",
+    "results/certificates/1344_221_88_26/model/problem.dat-s": "a77c44aabc788cca6b941825a8b561197ee7fd59b6244d5c840b82e114bd45f9",
+    "results/certificates/1344_221_88_26/model/solver.par": "8381a9a9028aa292ca96a1315959f3b3f470f5f6e2fd10535469f4620d8e1a6a",
+    "results/certificates/1344_221_88_26/solution/candidate.json": "128c2d92f28908c5204b49228f020049b4402c014570edde7b9b421b7dd280a7",
+    "results/certificates/1344_221_88_26/solution/solver.out": "b0f094d827ead4d97cff716a853e93e1d8943a34c1abace426c2ad743a940419",
+    "results/certificates/351_140_73_44/historical_verification.json": "838d8ddba507b5482c53829410cc851a6dc7657e12de143ad84c49feb1a43cd0",
+    "results/certificates/351_140_73_44/input.json": "dda6269f1cf0d723733c134b667aca35cb10d57247554c1531308c998b586cb6",
+    "results/certificates/351_140_73_44/model/build.json": "434faee7574a236a75979ed4836d02200b4d3ca622eb6abaf042eb6194e6a4b2",
+    "results/certificates/351_140_73_44/model/exact_coefficients.tsv": "3e2ef7f9c66fd61fbb112de9fbe34d427d1c2530d881a849f7254bc93062ea19",
+    "results/certificates/351_140_73_44/model/metadata.json": "cfcf2bfefa15f62d76d50680a58959bee82d5f337ffc89facc170dd689f4da8b",
+    "results/certificates/351_140_73_44/model/original_exact_coefficients.tsv": "69c6dbb5a9d75f61741095884968b97ff9d233101e2ad32bc9afddcb3b14b2e4",
+    "results/certificates/351_140_73_44/model/original_metadata.json": "28a6a3612306155b52124c1ac29afbe43feb062ab68ba3f41ee6c0685101b478",
+    "results/certificates/351_140_73_44/model/physical_shifts.json": "62483fd0f9885070378d8a1d01e5c49978242495aa5433eee7de0ecdfe694aa2",
+    "results/certificates/351_140_73_44/model/problem.dat-s": "b2fa06e355c2a1e47b2016ad13d1e33ca244cbe09e43b11e94f128c304f07672",
+    "results/certificates/351_140_73_44/model/solver.par": "8381a9a9028aa292ca96a1315959f3b3f470f5f6e2fd10535469f4620d8e1a6a",
+    "results/certificates/351_140_73_44/solution/candidate.json": "ef405f6089f808be1894ae77d83093228883aefc75f4da6c3b23bd036c4eef1b",
+    "results/certificates/351_140_73_44/solution/solver.out": "489db2d574bf0a76de0d40dd99905a36bd79bebd0b14c1ce333c19b0e6e4152c",
+    "results/certificates/550_162_75_36/historical_verification.json": "02914373d0305f1072d17275b3d9204f3f31cd5d181fc56db6accfc7597e7cbd",
+    "results/certificates/550_162_75_36/input.json": "5b3d32356477ef29cb917d264c8cbcd2caeb289b212b97d7f0999f276d8eaca1",
+    "results/certificates/550_162_75_36/model/build.json": "854d2d91d603b824d19b6118b9e6b70e7b3dd98a2fa6e0652dc0080aeedf5bfd",
+    "results/certificates/550_162_75_36/model/exact_coefficients.tsv": "fa47fecbf0fdfbfbf27a6493d4f62325231a10e8f6efb57b470a1eff65976d80",
+    "results/certificates/550_162_75_36/model/metadata.json": "bf2d1b558bd64731bddd37795a582f12ee045c05f6fd589416d07ab30644a86c",
+    "results/certificates/550_162_75_36/model/original_exact_coefficients.tsv": "80205286b3062233992caef54c0b96da532fa73a5479f6745c42815c51ba66c8",
+    "results/certificates/550_162_75_36/model/original_metadata.json": "54f8be777f6bfd3894ef5fc4e1edf28d7acfaaaf6e5cd6096f045b5f643c017b",
+    "results/certificates/550_162_75_36/model/physical_shifts.json": "62483fd0f9885070378d8a1d01e5c49978242495aa5433eee7de0ecdfe694aa2",
+    "results/certificates/550_162_75_36/model/problem.dat-s": "01233d663c99fe23588135baa7625f96b6a2c78f9a431b6aa067c0553a288211",
+    "results/certificates/550_162_75_36/model/solver.par": "8381a9a9028aa292ca96a1315959f3b3f470f5f6e2fd10535469f4620d8e1a6a",
+    "results/certificates/550_162_75_36/solution/candidate.json": "88b44537c884c3fc42d71033a44d805e142dc485e5006a340b6fd5c1c845c317",
+    "results/certificates/550_162_75_36/solution/solver.out": "af4fb846920d8fecd9c8b46e30478a9682b5d8ac6c104f3274001f46bef08bbc",
+    "results/certificates/703_182_81_35/historical_verification.json": "f43d980120c375c7b70789aaf354fea6df136b6f8108e1c259768fb88f7f624a",
+    "results/certificates/703_182_81_35/input.json": "26c54b351f908ffef3a7a8e7e07ef784d3d2d42aec49768dd822c091c470b04f",
+    "results/certificates/703_182_81_35/model/build.json": "2aec29eac610424d6fb5d20c817180a0d28e98fb72fee4a2549e05f43ccbe313",
+    "results/certificates/703_182_81_35/model/exact_coefficients.tsv": "ddbbad624502e1161ccfcd92e95953ab034c3121a6a7ec1cc3aba4efb6409f44",
+    "results/certificates/703_182_81_35/model/metadata.json": "19fc3b0abc7820494e977dd0f086a53ded3e0a0f94678cc69cf0bfabc3bcf9e3",
+    "results/certificates/703_182_81_35/model/original_exact_coefficients.tsv": "2378e9b7f3117c49b429bd39958a879bc23b271158a066a8e03dcfee515828ba",
+    "results/certificates/703_182_81_35/model/original_metadata.json": "526f5251efa199a103e21a12b1aab6337faad0965ff198df5f6b201c73cab816",
+    "results/certificates/703_182_81_35/model/physical_shifts.json": "62483fd0f9885070378d8a1d01e5c49978242495aa5433eee7de0ecdfe694aa2",
+    "results/certificates/703_182_81_35/model/problem.dat-s": "e1191218630309f2138509f373b927338aaea1a09d094a8b2e8b4b158f550a24",
+    "results/certificates/703_182_81_35/model/solver.par": "8381a9a9028aa292ca96a1315959f3b3f470f5f6e2fd10535469f4620d8e1a6a",
+    "results/certificates/703_182_81_35/solution/candidate.json": "b92f3ceee9c50e9ad9bb29bdfe7b5f6137877f77170046dc177209a2602d573b",
+    "results/certificates/703_182_81_35/solution/solver.out": "6295e5bfb44e011ed174521a56eecdb625b67f401b198a4c2fff3cf7d13db4c5"
+  }
+}

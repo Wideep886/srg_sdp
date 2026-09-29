@@ -1,0 +1,31 @@
+{
+  "status": "CERTIFIED",
+  "verified": true,
+  "parameters": [
+    16,
+    6,
+    2,
+    2
+  ],
+  "points": 3,
+  "degree": 5,
+  "sphere_dimension": 6,
+  "inner_products": [
+    "-1/3",
+    "1/3"
+  ],
+  "certified_integer_bound": 16,
+  "nonexistence_proved": false,
+  "verification_summary": "/Users/wideep886/Documents/LEO2/research/clean_release_v11/final_rook/verification/verification_summary.json",
+  "input_sha256": "81eb498eed6026fc7edc9dea152386d2e541ad93b86747e5602954139687e14c",
+  "graph_embedding_inputs_unchanged": true,
+  "graph_embedding_input_sha256": {
+    "/Users/wideep886/Documents/LEO2/research/clean_release_v11/final_rook/input.json": "81eb498eed6026fc7edc9dea152386d2e541ad93b86747e5602954139687e14c",
+    "/Users/wideep886/Documents/LEO2/research/clean_release_v11/final_rook/model/metadata.json": "73d9d794fc3352b325f0b441441434de120bc93ace5cb4905f2710191143215c",
+    "/Users/wideep886/Documents/LEO2/research/clean_release_v11/final_rook/model/original_metadata.json": "cea929aa81c6b354d8ced04e8faee3eed9db9a8f5120bf6962e2785e2a799a86",
+    "/Users/wideep886/Documents/LEO2/output/srg_sdp_v11/code/parameters.py": "54a12e308593f395c083fea59bd5296b6c4f2ff0eccdaf05e824a364285cd370",
+    "/Users/wideep886/Documents/LEO2/output/srg_sdp_v11/code/workflow.py": "37b05129afd9c564d62b17b818db8f29290d918d4c6dce6e529e5908a3243c07"
+  },
+  "original_model_sha256": "cea929aa81c6b354d8ced04e8faee3eed9db9a8f5120bf6962e2785e2a799a86",
+  "parameter_checker_sha256": "54a12e308593f395c083fea59bd5296b6c4f2ff0eccdaf05e824a364285cd370"
+}

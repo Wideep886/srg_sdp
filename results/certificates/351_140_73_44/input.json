@@ -1,0 +1,14 @@
+{
+  "schema": "srg-sdp-input-v1",
+  "parameters": [
+    351,
+    140,
+    73,
+    44
+  ],
+  "eigenspace": "auto",
+  "points": 6,
+  "degree": 5,
+  "saved_integer_bound": 348,
+  "history": "Saved data copied from the previously verified archive. historical_verification.json is a historical report, not a new acceptance decision."
+}
